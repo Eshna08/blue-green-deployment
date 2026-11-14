@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blue Green Deployment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #16834a;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: background 0.5s ease;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .version {
+            font-size: 14px;
+            margin-bottom: 25px;
+            opacity: 0.85;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            background: white;
+            color: #16834a;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Blue-Green Deployment</h1>
+
+        <p>Welcome to the Green Environment!</p>
+
+        <div class="version" id="version">
+            Version 2.0 | GREEN
+        </div>
+
+        <button onclick="showMessage()">
+            Test Application
+        </button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Green environment is running successfully!");
+        }
+    </script>
+</body>
+</html>
